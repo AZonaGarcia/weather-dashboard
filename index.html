@@ -24,33 +24,115 @@
         <div class="row">
             <div class="col-4">
                 <form>
-                    <label for="exampleInputPassword1">Search for City</label>
+                    <h2>Search for City:</h2>
                     <div class="row">
                         <div class="col-9">
                             <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="text" class="form-control" id="selCity">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                  </ul>
+                                    <input class="btn btn-outline-light" type="button" value="Input">
+                                    <input class="btn btn-outline-light" type="button" value="Input">
+                                    <input class="btn btn-outline-light" type="button" value="Input">
+                                    <input class="btn btn-outline-light" type="button" value="Input">
+                                    <input class="btn btn-outline-light" type="button" value="Input">
+                                </ul>
                             </div>
                         </div>
                         <div class="col-3">
-                            <button type="submit" class="btn fas fa-search btn-primary"></button>
+                            <button type="submit" class="btn fas fa-search btn-primary" id="searchBtn"></button>
                         </div>
 
                     </div>
-
-
-
                 </form>
             </div>
             <div class="col-8">
-                <div class="row"></div>
-                <div class="row"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <h2 id="currentCity" class="display-4">Current City</h2>
+                            <hr class="my-4">
+                            <p id="temp">Temperature:</p>
+                            <p id="humidity">Humidity:</p>
+                            <p id="wind">Wind Speed:</p>
+                            <p id="uvIndex">UV Index:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>5 Day Forecast</h2>
+                </div>
+                <div class="row">
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date1"></h5>
+                            <br />
+                            <img id="day1" class="card-img-top" alt="weather-icon">
+                            <br />
+                            <br />
+                            <p id="temp1">Temperature:</p>
+                            <p id="humidity1">Humidity:</p>
+                            <p id="wind1">Wind Speed:</p>
+                            <p id="uvIndex1">UV Index:</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <br />
+                            <img src="..." class="card-img-top" alt="weather-icon">
+                            <br />
+                            <br />
+                            <p id="temp">Temperature:</p>
+                            <p id="humidity">Humidity:</p>
+                            <p id="wind">Wind Speed:</p>
+                            <p id="uvIndex">UV Index:</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <br />
+                            <img src="..." class="card-img-top" alt="weather-icon">
+                            <br />
+                            <br />
+                            <p id="temp">Temperature:</p>
+                            <p id="humidity">Humidity:</p>
+                            <p id="wind">Wind Speed:</p>
+                            <p id="uvIndex">UV Index:</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <br />
+                            <img src="..." class="card-img-top" alt="weather-icon">
+                            <br />
+                            <br />
+                            <p id="temp">Temperature:</p>
+                            <p id="humidity">Humidity:</p>
+                            <p id="wind">Wind Speed:</p>
+                            <p id="uvIndex">UV Index:</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 15rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <br />
+                            <img src="..." class="card-img-top" alt="weather-icon">
+                            <br />
+                            <br />
+                            <p id="temp">Temperature:</p>
+                            <p id="humidity">Humidity:</p>
+                            <p id="wind">Wind Speed:</p>
+                            <p id="uvIndex">UV Index:</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -58,7 +140,6 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/style.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -68,6 +149,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/style.js"></script>
+
+
 </body>
 
 </html>
