@@ -21,5 +21,4 @@ SO THAT I can plan a trip accordingly
 
 [Name of Link you are going to paste](Link of github page.io)
 
-![Alt text for image](https://github.com/[githubusername]/[name-of-repo]/blob/master/[folder-name-of-images]/[name-of-pic (ex. something.png)])
-![Alt text for image](https://github.com/[githubusername]/[name-of-repo]/blob/master/[folder-name-of-images]/[name-of-pic (ex. something.png)])
+![Weather Dashboard](https://github.com/AZonaGarcia/weather-dashboard/blob/master/assets/Weather_Dashboard.png)
