@@ -47,42 +47,42 @@ $(document).ready(function () {
                 url: queryFiveDay,
                 method: "GET"
             }).then(function(response){
-                var tempF1 = (response.list[1].main.temp - 273.15) * 1.80 + 32
-                var tempF2 = (response.list[8].main.temp - 273.15) * 1.80 + 32
-                var tempF3 = (response.list[16].main.temp - 273.15) * 1.80 + 32
-                var tempF4 = (response.list[24].main.temp - 273.15) * 1.80 + 32
-                var tempF5 = (response.list[32].main.temp - 273.15) * 1.80 + 32
+                var tempF1 = (response.list[7].main.temp - 273.15) * 1.80 + 32
+                var tempF2 = (response.list[14].main.temp - 273.15) * 1.80 + 32
+                var tempF3 = (response.list[23].main.temp - 273.15) * 1.80 + 32
+                var tempF4 = (response.list[30].main.temp - 273.15) * 1.80 + 32
+                var tempF5 = (response.list[38].main.temp - 273.15) * 1.80 + 32
 
 
-                $("#date1").text(moment(response.list[1].dt*1000).format("MM/DD/YYYY"));
-                $("#day1").attr('src', "http://openweathermap.org/img/wn/" + response.list[1].weather[0].icon + "@2x.png")
+                $("#date1").text(moment(response.list[7].dt*1000).format("MM/DD/YYYY"));
+                $("#day1").attr('src', "http://openweathermap.org/img/wn/" + response.list[7].weather[0].icon + "@2x.png")
                 $("#temp1").text("Temperature: " + tempF1.toFixed(2)) + "°F";
-                $("#humidity1").text("Humidity: " + (response.list[1].main.humidity)) + "%";
-                $("#wind1").text("Wind Speed: " + (response.list[1].wind.speed)) + "MPH";
+                $("#humidity1").text("Humidity: " + (response.list[7].main.humidity)) + "%";
+                $("#wind1").text("Wind Speed: " + (response.list[7].wind.speed)) + "MPH";
 
-                $("#date2").text(moment(response.list[8].dt*1000).format("MM/DD/YYYY"));
-                $("#day2").attr('src', "http://openweathermap.org/img/wn/" + response.list[8].weather[0].icon + "@2x.png")
+                $("#date2").text(moment(response.list[14].dt*1000).format("MM/DD/YYYY"));
+                $("#day2").attr('src', "http://openweathermap.org/img/wn/" + response.list[14].weather[0].icon + "@2x.png")
                 $("#temp2").text("Temperature: " + tempF2.toFixed(2)) + "°F";
                 $("#humidity2").text("Humidity: " + (response.list[0].main.humidity)) + "%";
-                $("#wind2").text("Wind Speed: " + (response.list[8].wind.speed)) + "MPH";
+                $("#wind2").text("Wind Speed: " + (response.list[14].wind.speed)) + "MPH";
 
-                $("#date3").text(moment(response.list[16].dt*1000).format("MM/DD/YYYY"));
-                $("#day3").attr('src', "http://openweathermap.org/img/wn/" + response.list[16].weather[0].icon + "@2x.png")
+                $("#date3").text(moment(response.list[23].dt*1000).format("MM/DD/YYYY"));
+                $("#day3").attr('src', "http://openweathermap.org/img/wn/" + response.list[23].weather[0].icon + "@2x.png")
                 $("#temp3").text("Temperature: " + tempF3.toFixed(2)) + "°F";
                 $("#humidity3").text("Humidity: " + (response.list[0].main.humidity)) + "%";
-                $("#wind3").text("Wind Speed: " + (response.list[16].wind.speed)) + "MPH";
+                $("#wind3").text("Wind Speed: " + (response.list[23].wind.speed)) + "MPH";
 
-                $("#date4").text(moment(response.list[24].dt*1000).format("MM/DD/YYYY"));
-                $("#day4").attr('src', "http://openweathermap.org/img/wn/" + response.list[24].weather[0].icon + "@2x.png")
+                $("#date4").text(moment(response.list[30].dt*1000).format("MM/DD/YYYY"));
+                $("#day4").attr('src', "http://openweathermap.org/img/wn/" + response.list[30].weather[0].icon + "@2x.png")
                 $("#temp4").text("Temperature: " + tempF4.toFixed(2)) + "°F";
                 $("#humidity3").text("Humidity: " + (response.list[0].main.humidity)) + "%";
-                $("#wind3").text("Wind Speed: " + (response.list[24].wind.speed)) + "MPH";
+                $("#wind3").text("Wind Speed: " + (response.list[30].wind.speed)) + "MPH";
 
-                $("#date5").text(moment(response.list[32].dt*1000).format("MM/DD/YYYY"));
-                $("#day5").attr('src', "http://openweathermap.org/img/wn/" + response.list[32].weather[0].icon + "@2x.png")
+                $("#date5").text(moment(response.list[38].dt*1000).format("MM/DD/YYYY"));
+                $("#day5").attr('src', "http://openweathermap.org/img/wn/" + response.list[38].weather[0].icon + "@2x.png")
                 $("#temp5").text("Temperature: " + tempF5.toFixed(2)) + "°F";
                 $("#humidity5").text("Humidity: " + (response.list[0].main.humidity)) + "%";
-                $("#wind5").text("Wind Speed: " + (response.list[32].wind.speed)) + "MPH";
+                $("#wind5").text("Wind Speed: " + (response.list[38].wind.speed)) + "MPH";
             })
 
         });

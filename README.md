@@ -10,10 +10,10 @@ SO THAT I can plan a trip accordingly
 ## Task To Be Completed:
 - [ X ] Create form 
 - [ X ] Create form inputs
-- [ ] Present the current and future conditions for a city when seached and add city to search history
-- [ ] Display: city name, date, temperature,humidity, wind speed and UV index
+- [ X ] Present the current and future conditions for a city when seached and add city to search history
+- [ X ] Display: city name, date, temperature,humidity, wind speed and UV index
 - [ ] Present UV index with a color that indicates whether the conditions are favorable, moderate, or severe
-- [ ] Present current weather conditions with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+- [ X] Present current weather conditions with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
 - [ ] Present the last searched city forecast when the weather dashboard is opened
 - [ ] Present the current and future conditions for a city that is in the search history
 
