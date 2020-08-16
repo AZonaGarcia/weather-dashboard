@@ -18,13 +18,15 @@ $(document).ready(function () {
             
             // Jumbotron information
         }).then(function (response) {
-            var tempF = (response.main.temp - 273.15) * 1.80 + 32
+            var tempF = ((response.main.temp - 273.15) * 1.80 + 32).toFixed(2)
             var lat = (response.coord.lat)
             var long = (response.coord.lon)
             queryUVI = "https://api.openweathermap.org/data/2.5/uvi/forecast?appid=2464fa0d1e7b9d4d2876e6cb88618f14&lat=" + lat + "&lon=" + long + "&cnt=5"
             
-            $("#currentCity").text(response.name + "  " + (moment(response.dt*1000).format("MM/DD/YYYY")));
-            $("#temp").text("Temperature: " + tempF.toFixed(2)) + "°F";
+            $("#currentCity").text(response.name + "  ") 
+            $("#currentDate").text(moment(response.dt*1000).format("(MM/DD/YYYY)"));
+            $("#day0").attr('src', "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
+            $("#temp").text("Temperature: " + tempF + " °F");
             $("#humidity").text("Humidity: " + (response.main.humidity)) + "%";
             $("#wind").text("Wind Speed: " + (response.wind.speed)) + "MPH";
 

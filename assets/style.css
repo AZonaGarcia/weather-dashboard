@@ -1,0 +1,34 @@
+.page-header {
+    background-color: black;
+    color: honeydew;
+    text-align: center;
+}
+
+.card {
+    width: 11rem;
+    margin: 10px;
+    color: cornsilk;  
+}
+
+.card-body {
+    background-color: blue;
+}
+
+.jumbotron {
+    padding-right: 10px;
+}
+
+#searchHistory {
+    background-color: lightgray;
+    margin-left: 10px;
+    border: 10px;
+}
+
+.form-group {
+    float: center;
+}
+
+#day0 {
+    height: 75px;
+
+}

@@ -23,33 +23,52 @@
     <div>
         <div class="row">
             <div class="col-4">
-                <form>
-                    <h2>Search for City:</h2>
-                    <div class="row">
-                        <div class="col-9">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="selCity">
-                                <ul class="list-group">
-                                    <input class="btn btn-outline-light" type="button" value="Input">
-                                    <input class="btn btn-outline-light" type="button" value="Input">
-                                    <input class="btn btn-outline-light" type="button" value="Input">
-                                    <input class="btn btn-outline-light" type="button" value="Input">
-                                    <input class="btn btn-outline-light" type="button" value="Input">
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <button type="submit" class="btn fas fa-search btn-primary" id="searchBtn"></button>
-                        </div>
+                <form id="searchHistory">
+                    <div class="container">
+                        <h2>Search for City:</h2>
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" id="selCity" class="form-control" placeholder=" "
+                                            aria-label="User Select City" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn fas fa-search btn-primary" type="submit"
+                                                id="searchBtn"></button>
+                                        </div>
+                                    </div>
 
+
+                                    <ul class="list-group">
+                                        <input class="btn btn-outline-light" type="button" value="Input">
+                                        <input class="btn btn-outline-light" type="button" value="Input">
+                                        <input class="btn btn-outline-light" type="button" value="Input">
+                                        <input class="btn btn-outline-light" type="button" value="Input">
+                                        <input class="btn btn-outline-light" type="button" value="Input">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="col-8">
                 <div class="row">
                     <div class="col-12">
-                        <div class="jumbotron">
-                            <h2 id="currentCity" class="display-4"></h2>
+                        <div class="jumbotron" style="background-color: transparent">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h1 id="currentCity"></h1>
+                                </div>
+                                <div class="col-4">
+                                    <h1 id="currentDate"></h1>
+                                </div>
+                                <div class="col-2">
+                                    <div><img src=" " id="day0" alt="weather-icon"></div>
+                                </div>
+                            </div>
+
                             <hr class="my-4">
                             <p id="temp">Temperature:</p>
                             <p id="humidity">Humidity:</p>
@@ -62,7 +81,7 @@
                     <h2>5 Day Forecast</h2>
                 </div>
                 <div class="row">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" id="date1"></h5>
                             <br />
@@ -76,7 +95,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" id="date2"></h5>
                             <br />
@@ -90,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" id="date3"></h5>
                             <br />
@@ -104,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" id="date4"></h5>
                             <br />
@@ -118,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" id="date5"></h5>
                             <br />
